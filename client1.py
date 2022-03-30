@@ -9,7 +9,7 @@ def main() -> None:
     context = zmq.Context()
     s  = context.socket(zmq.REQ)
 
-    p1 = "tcp://"+ HOST +":"+ PORT1
+    p1 = f"tcp://{HOST}:{PORT1}"
     s.connect(p1)
 
     # Inputs
